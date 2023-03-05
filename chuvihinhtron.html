@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học,
+và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.
+Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F
+(Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9].
+Bài 3: Viết chương trình tính diện tích hình tròn.
+Bài 4: Viết chương trình chu vi hình tròn. -->
+   <script>
+    // bài 1
+    let vatLy = parseFloat(prompt('Nhập điểm môn Vật Lý'))
+    let hoaHoc = parseFloat(prompt('Nhập điểm môn Hóa Học'))
+    let sinhHoc = parseFloat(prompt('Nhập điểm môn Sinh Học'))
+    let total = vatLy + hoaHoc + sinhHoc;
+    let sum = (vatLy + hoaHoc + sinhHoc)/3;
+    console.log('Tổng điểm:', total);
+    console.log('Điểm trung bình:', sum);
+    //  bài 2
+    let celsius = parseFloat(prompt('Nhập vào độ C'))
+   fahrenheit =  celsius * 1.8000+ 32.0
+
+   console.log(fahrenheit, 'Độ F')
+//    bài 3
+let x = parseFloat(prompt('Nhập vào bán kính'))
+let s = x*x*3.14;
+console.log('Diện tích hình tròn',s)
+// bài 4
+let r = parseFloat(prompt('Nhập vào bán kính'))
+let a = 3.14 * r
+console.log('Chu vi hình tròn',a);
+   </script> 
+</body>
+</html>
